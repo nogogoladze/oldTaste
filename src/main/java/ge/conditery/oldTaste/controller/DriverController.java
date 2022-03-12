@@ -26,7 +26,7 @@ public class DriverController {
 
     @PostMapping("driver/car/{personalNumber}/{carNumber}")
     public void relateCar(@PathVariable Integer personalNumber,
-                          @PathVariable String carNumber){
+                          @PathVariable String carNumber) {
         driverService.relateCar(personalNumber, carNumber);
     }
 

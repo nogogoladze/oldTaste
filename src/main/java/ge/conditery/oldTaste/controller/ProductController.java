@@ -25,13 +25,13 @@ public class ProductController {
 
     @PostMapping("product/provider/{productId}/{providerId}")
     public void relateProvider(@PathVariable Integer productId,
-                          @PathVariable Integer providerId){
+                               @PathVariable Integer providerId) {
         productService.relateProvider(productId, providerId);
     }
 
     @PostMapping("product/company/{productId}/{companyName}")
     public void relateCompany(@PathVariable Integer productId,
-                               @PathVariable String companyName){
+                              @PathVariable String companyName) {
         productService.relateCompany(productId, companyName);
     }
 

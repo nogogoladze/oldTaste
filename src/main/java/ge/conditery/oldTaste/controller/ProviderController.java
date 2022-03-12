@@ -34,7 +34,7 @@ public class ProviderController {
 
     @PostMapping("provider/company/{providerId}/{companyName}")
     public void relateCar(@PathVariable Integer providerId,
-                          @PathVariable String companyName){
+                          @PathVariable String companyName) {
         providerService.relateCompany(providerId, companyName);
     }
 

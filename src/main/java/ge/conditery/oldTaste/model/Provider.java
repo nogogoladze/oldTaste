@@ -32,7 +32,7 @@ public class Provider {
     @ManyToOne
     private Company company;
 
-    @ManyToMany (mappedBy = "providers")
+    @ManyToMany(mappedBy = "providers")
     private List<Product> products;
 
 }

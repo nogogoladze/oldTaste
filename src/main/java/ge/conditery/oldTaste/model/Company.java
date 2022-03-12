@@ -31,6 +31,6 @@ public class Company {
     @OneToMany(mappedBy = "company")
     private List<Provider> providers;
 
-    @ManyToMany (mappedBy = "companies")
+    @ManyToMany(mappedBy = "companies")
     private List<Product> products;
 }
