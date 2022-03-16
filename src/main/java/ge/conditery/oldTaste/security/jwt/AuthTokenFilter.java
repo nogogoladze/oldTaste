@@ -1,7 +1,6 @@
 package ge.conditery.oldTaste.security.jwt;
 
 import ge.conditery.oldTaste.service.implementation.UserDetailsServiceImpl;
-import io.jsonwebtoken.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -24,8 +23,6 @@ import java.io.IOException;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AuthTokenFilter extends OncePerRequestFilter {
-    @Value("secretKey")
-    private String jwtSecret;
 
     @Autowired
     private JwtUtils jwtUtils;
